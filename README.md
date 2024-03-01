@@ -1,4 +1,4 @@
-# CGP4CBO
+# Collabrative Bayesian Optimization via Constrained Gaussian Processes
 Numerical experiments can be replicated using the code here. 
 Under each test function, one can find different methods by referring to their file names.
 To replicate our result, simply run the corresponding file under the folder.
