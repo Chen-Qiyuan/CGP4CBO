@@ -285,8 +285,9 @@ if __name__ == "__main__":
         BOD_table.append(BOD_record)
         simple_table.append(simple_record)
 
-    pd.DataFrame(BOD_table).T.to_excel("cos_ucb_bod.xlsx", index=False, engine='openpyxl')
-    pd.DataFrame(simple_table).T.to_excel("cos_ucb_int.xlsx", index=False, engine='openpyxl')
+    import pandas as pd
+    pd.DataFrame(BOD_table).T.to_csv("cos-ucb-bod.csv", index=False)
+    pd.DataFrame(simple_table).T.to_csv("cos-ucb-int.csv", index=False)
 
 
     

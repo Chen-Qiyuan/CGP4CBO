@@ -299,8 +299,8 @@ if __name__ == "__main__":
         simple_table.append(simple_record)
     
     import pandas as pd
-    pd.DataFrame(BOD_table).T.to_excel("cos_fts_bod.xlsx", index=False, engine='openpyxl')
-    pd.DataFrame(simple_table).T.to_excel("cos_fts_int.xlsx", index=False, engine='openpyxl')
+    pd.DataFrame(BOD_table).T.to_csv("cos-fts-bod.csv", index=False)
+    pd.DataFrame(simple_table).T.to_csv("cos-fts-int.csv", index=False)
         
         
         
