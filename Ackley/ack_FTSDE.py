@@ -410,6 +410,6 @@ if __name__ == "__main__":
         simple_table.append(simple_record)
     
     import pandas as pd
-    pd.DataFrame(BOD_table).T.to_excel("ack_ftsde_bod.xlsx", index=False, engine='openpyxl')
-    pd.DataFrame(simple_table).T.to_excel("ack_ftsde_int.xlsx", index=False, engine='openpyxl')
+    pd.DataFrame(BOD_table).T.to_csv("ack-ftsde-bod.csv", index=False)
+    pd.DataFrame(simple_table).T.to_csv("ack-ftsde-int.csv", index=False)
         
