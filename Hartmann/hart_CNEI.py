@@ -415,8 +415,8 @@ if __name__ == "__main__":
         simple_table.append(simple_record)
     
     import pandas as pd
-    pd.DataFrame(BOD_table).T.to_excel("hart_cnei_bod.xlsx", index=False, engine='openpyxl')
-    pd.DataFrame(simple_table).T.to_excel("hart_cnei_int.xlsx", index=False, engine='openpyxl')
+    pd.DataFrame(BOD_table).T.to_csv("hart_cnei_bod.csv", index=False)
+    pd.DataFrame(simple_table).T.to_csv("hart_cnei_int.csv", index=False)
         
         
 

@@ -417,8 +417,8 @@ if __name__ == "__main__":
         BOD_table.append(BOD_record)
         simple_table.append(simple_record)
 
-    pd.DataFrame(BOD_table).T.to_excel("hart_cucb_bod.xlsx", index=False, engine='openpyxl')
-    pd.DataFrame(simple_table).T.to_excel("hart_cucb_int.xlsx", index=False, engine='openpyxl')
+    pd.DataFrame(BOD_table).T.to_csv("hart_cucb_bod.csv", index=False)
+    pd.DataFrame(simple_table).T.to_csv("hart_cucb_int.csv", index=False)
 
 
     
